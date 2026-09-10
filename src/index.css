@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --color-ivory: #f3e8dc;
+  --color-beige: #e9dfcc;
+  --color-ink: #111111;
+  --color-charcoal: #4a4a4a;
+  --color-terracotta: #c84d31;
+  --color-gold: #f2b63d;
+  --color-cobalt: #2f6bff;
+}
+
+@theme inline {
+  --color-ivory: var(--color-ivory);
+  --color-beige: var(--color-beige);
+  --color-ink: var(--color-ink);
+  --color-charcoal: var(--color-charcoal);
+  --color-terracotta: var(--color-terracotta);
+  --color-gold: var(--color-gold);
+  --color-cobalt: var(--color-cobalt);
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.lesson-copy p {
+  line-height: 1.75;
+  color: var(--color-charcoal);
+}
